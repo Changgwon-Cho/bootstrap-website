@@ -10,25 +10,84 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
     <!-- kaho ↓ -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" >
-          <div class="container-sm" style="background-color: #252B42;">
-            <a class="navbar-brand text-white pt-3 pb-3" href="#" >Brand Name</a>
+        <!-- Navbar 992以上で消える--> 
+        <!-- <nav class="container"> 
+          <nav class="navbar" >
+            <div class="container" style="background-color: #252B42;">
+              <a class="navbar-brand text-white pt-3 pb-3" href="#" >Brand Name</a>
+              <nav class="navbar" >
+                <ul class="navigation-title d-flex flex-row align-content-start list-unstyled">
+                  <li><a class="nev-title" href="#">Home</a></li>
+                  <li><a class="nev-title" href="#">Product</a></li>
+                  <li><a class="nev-title" href="#">Product</a></li>
+                  <li><a class="nev-title" href="#">Something else here</a></li>
+                </ul> -->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <div class="navigation container-fluid pt-3 pb-3">
+                    <a class="navbar-brand text-white" href="#">Brand Name</a>
+                    <div class="gap-1">
+                    <img class="d-lg-none" src="K.assets/icn search .icn-xs.svg" alt="Menu" width="30" height="30">
+                    <img class="d-lg-none" src="K.assets/icn shopping-cart .icn-xs.svg" alt="Menu" width="30" height="30">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <img src="K.assets/icn menu .icn-xs.svg" alt="Menu" width="30" height="30">
+                    </button>
+                    </div>
+                    <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active text-white" aria-current="page" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+
+                        <!-- <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            pricing
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>  -->
+                      </ul>
+                      <div class="d-flex gap-3">
+                        <a class="nav-link" href="#">Login</a>
+                        <button class="btn btn-primary" type="submit">Become a member →</button>
+                      </div>
+                    </div>
+                  </div>
+                </nav>    
+
+
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
-                <li class="nav-item"> <!-- ICON1 -->
+                <li? class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"><img src="K.assets/icn search .icn-xs.svg" alt="Icon" width="30"></a>
-                </li>
-                <li class="nav-item"><!-- ICON2 -->
+              </li?>
+                <li class="nav-item">
                   <a class="nav-link" href="#"><img src="K.assets/icn shopping-cart .icn-xs.svg" alt="Icon" width="30"></a>
                 </li>
-                <li class="nav-item dropdown"><!-- ICON3 -->
+                <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="K.assets/icn menu .icn-xs.svg" alt="Icon" width="30">
-                  </a>
+                    <img src="K.assets/icn menu .icn-xs.svg" alt="Icon" width="30"></a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#"></a>Home</li>
                     <li><a class="dropdown-item" href="#">Product</a></li>
@@ -36,22 +95,35 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
               </ul>
-            </div>
+            </div> -->
           </div>
-        </nav>
-        <div class="bg-image" style="background-image: url('K.assets/background.svg'); background-size: auto; background-position: right center; height: 100vh; overflow: hidden; position: relative;">
-          <div class="text-overlay pl" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 36px; font-weight: bold;">
-            <h1 class="fs-1">We Ensure A Best Insurance Service</h1>
-            <p class="fs-6">We know how large objects will act, but things 
-              on a small scale just do not act that way.</p>
-              <div class="d-grid gap-2">
-                <button class="btn btn-primary" type="button" style="background-color:#23A6F0;" >Get Quote Now</button>
-                <button class="btn btn-primary" type="button">Learn More</button>
+        </nav> 
+
+        <!-- ボタン -->
+        <div class="container-fluid">
+          <div class="bg-image position-relative" style="background-image: url('K.assets/background.svg'); height:80vh; background-position: right center;
+          background-repeat: no-repeat;
+          overflow: hidden; ">
+          <!-- <div class="bg-image" style="background-image: url('K.assets/background.svg'); background-size: auto; background-position: right; height: 100vh; overflow: hidden; position: relative;">-->
+          <div class="text-overlay pl text-center text-lg-start" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 36px; font-weight: bold;">
+            <div class="container_responsive">
+              <div class="d-flex flex-column align-content-center gap-2"> 
+                <h1 class="fs-1">We Ensure A Best Insurance Service</h1>
+                <p class="fs-6">We know how large objects will act, but things on a small scale just do not act that way.</p>
+                <div class="button_top d-flex flex-column gap-2">
+                  <!-- <div class="d-grid gap-2"> -->
+                  <button class="btn btn-primary rounded-pill  p-2" type="button">Get Quote Now</button>
+                  <button class="btn btn-outline-primary rounded-pill p-2 " type="button">Learn More</button>
+                    <!-- <button class="col-lg-3 btn btn-primary rounded-pill p-3 col-lg-1" type="button">Get Quote Now</button>
+                    <button class="col-lg-3 btn btn-outline-primary rounded-pill p-3 col-lg-1" type="button">Learn More</button> -->
+                </div>
               </div>
+            </div>  
+          </div>
           </div>
         </div>
         <!-- 水色ICONパート -->
-        <div class="row d-flex align-items-center pt-5 text-white" style="background-color: #252B42;">
+        <!-- <div class="row d-flex align-items-center pt-5 text-white" style="background-color: #252B42;">
           <div class="col-lg-1">
             <img class="d-flex" src="K.assets/icn resize .icn-xl.svg" alt="Icon" width="100">
             <h3 class="fs-3 p-2 ">Peace of Mind</h3>
@@ -66,58 +138,75 @@
             <img class="d-flex" src="K.assets/icn resize .icn-xl.svg" alt="Icon" width="100">
             <h3 class="fs-3 p-2 ">Peace of Mind</h3>
             <p class="fs-6">Now we have given up. </p>
+          </div>
+        </div> -->
+        <div class="features-1 d-flex flex-column text-white" style="gap: 30px; background-color: #252B42;">
+          <div class="d-flex flex-column" style="padding:50px";>
+            <img src="./K.assets/icn resize .icn-xl.svg" alt="resize">
+            <h5 class="text-center" style="padding-top: 30px;">Peace of Mind</h5>
+            <p class="text-center">So it really behaves like neither. 
+              Now we have given up. </p>
+          </div>
+          <div class="d-flex flex-column" style="padding:50px";>
+            <img src="./K.assets/icn resize .icn-xl.svg" alt="resize">
+            <h5 class="text-center" style="padding-top: 30px;">Set For Life
+            </h5>
+            <p class="text-center">They were used to create the 
+              machines that launched </p>
+          </div>
+          <div class="d-flex flex-column" style="padding:50px";>
+            <img src="./K.assets/icn resize .icn-xl.svg" alt="resize">
+            <h5 class="text-center" style="padding-top: 30px;">100% Satisfaction
+            </h5>
+            <p class="text-center">So it really behaves like neither. 
+              Now we have given up. </p>
           </div>
         </div>
         <!-- RATINGパート -->
         <div class="" style="background-color: #8EC2F2; padding: 30px 42px;">
-          <h1 class="fs-1 text-white text-center">What clients say</h1>
-            <p class="fs-6 text-center">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
-          <div class="row g-4">
-          <div class="col-12 col-lg-6">
-            <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Regina Miles</h5>
-              <p class="card-text">Designer</p>
-              <img src="K.assets/stars.svg" alt="Icon" width="">
-              <p class="card-text">This proved to be 
-                impossible using the 
-                traditional concepts 
-                of space and time. Einstein 
-                developed a new view 
-                of time first and then 
-                space. This proved to be 
-                impossible using the 
-                traditional concepts 
-                of space and time. Einstein 
-                developed a new view 
-                of time first and then space.</p>
-            </div>
-          </div>
-          </div>
-
-          <div class="col-12 col-lg-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Regina Miles</h5>
-              <p class="card-text">Designer</p>
-              <img src="K.assets/stars.svg" alt="Icon" width="">
-              <p class="card-text">This proved to be 
-                impossible using the 
-                traditional concepts 
-                of space and time. Einstein 
-                developed a new view 
-                of time first and then 
-                space. This proved to be 
-                impossible using the 
-                traditional concepts 
-                of space and time. Einstein 
-                developed a new view 
-                of time first and then space.</p>
-            </div>
-          </div>
-          </div>
+          <h1 class="fs-1 text-white text-center" style="padding-top: 45px;" >What clients say</h1>
+          <p class="fs-6 text-center">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+              <div class="card_container d-flex  flex-column justify-content-center align-items-center" style="gap: 30px;">
+                <div class="card" style="max-width: 414px; min-height: 408px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Regina Miles</h5>
+                    <p class="card-text">Designer</p>
+                    <img src="K.assets/stars.svg" alt="Icon" width="">
+                    <p class="card-text">This proved to be 
+                                              impossible using the 
+                                              traditional concepts 
+                                              of space and time. Einstein 
+                                              developed a new view 
+                                              of time first and then 
+                                              space. This proved to be 
+                                              impossible using the 
+                                              traditional concepts 
+                                              of space and time. Einstein 
+                                              developed a new view 
+                                              of time first and then space.</p>
+                  </div>
+                </div>
+                <div class="card" style="max-width: 414px; min-height: 408px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Regina Miles</h5>
+                    <p class="card-text">Designer</p>
+                    <img src="K.assets/stars.svg" alt="Icon" width="">
+                    <p class="card-text">This proved to be 
+                    impossible using the 
+                    traditional concepts 
+                    of space and time. Einstein 
+                    developed a new view 
+                    of time first and then 
+                    space. This proved to be 
+                    impossible using the 
+                    traditional concepts 
+                    of space and time. Einstein 
+                    developed a new view 
+                    of time first and then space.</p>
+                  </div>
+                </div>
+              </div>
         </div>
-      </div>
 
     </header>
 

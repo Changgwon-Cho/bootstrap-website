@@ -1,9 +1,31 @@
 /* kaho↓ 576*/
 
+.navigation{
+  background-color: #252B42;}
+
+.features-1 {
+  padding: 96px 195px;
+}
+
 /* Jay↓ */
 
 @media screen and (min-width: 992px) {
   /* kaho↓ */
+  .navigation{
+    background-color: none !important;}
+
+  .features-1 {
+    flex-direction: row !important;
+  }
+
+  .button_top{
+    flex-direction: row !important;
+  }
+
+.card_container{
+  flex-direction: row !important;
+  }
+}
 
   /* Jay↓ */
 }
