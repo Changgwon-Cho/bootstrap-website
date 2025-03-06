@@ -31,7 +31,7 @@
   padding: 30px 42px;
   position: relative;
   width: 100%;
-  height: 230vh;
+  height: 110vh;
   background-image: url("./assets/imgs/appointment-bg.svg");
   background-size: cover;
   background-position: center center;
@@ -81,15 +81,113 @@ textarea {
   /* kaho↓ */
 
   /* Jay↓ */
+  /* first section */
   .together {
     padding: 112px 15px;
   }
 
+  .together-content {
+    padding: 0 !important;
+  }
+
+  .together-main-content h2 {
+    margin-bottom: 10px !important;
+  }
+
+  /* second section */
   .pricing {
-    padding: 0 195px;
+    padding: 112px 195px;
+  }
+
+  .pricing-content {
+    padding: 0 !important;
+  }
+
+  .pricing-style h3 {
+    order: 1;
+  }
+  .pricing-style h5 {
+    order: 2;
+  }
+  .price-info {
+    order: 3;
+  }
+  .feature-lists {
+    order: 5;
+  }
+  .pricing-style button {
+    order: 4;
+  }
+
+  /* third section */
+  .contact {
+    padding: 50px 195px !important;
+  }
+
+  .contact-content {
+    padding: 0 !important;
+    width: 42% !important;
+    margin-left: -15% !important;
   }
 
   .contact-main-content h2 {
     padding-left: 0 !important;
+  }
+
+  .half-width,
+  .position-relative {
+    width: 50%;
+  }
+
+  .name-email-content {
+    flex-direction: row !important;
+  }
+
+  .select-content {
+    flex-direction: row !important;
+  }
+
+  .bt-area button {
+    width: 38% !important;
+  }
+
+  /* footer */
+  .contact-ft {
+    padding: 40px 195px !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .contact-ft button {
+    margin-right: 38px;
+  }
+
+  .info-ft {
+    padding: 50px 195px !important;
+  }
+
+  .info-ft-area {
+    flex-direction: row !important;
+  }
+
+  .contact-info {
+    margin-right: 30px;
+  }
+
+  .legal-info {
+    margin-right: 60px;
+  }
+
+  .resources-info {
+    margin-right: 40px;
+  }
+
+  .copy-link-ft {
+    padding: 25px 195px !important;
+  }
+
+  .link-box {
+    margin-right: 62px;
   }
 }
