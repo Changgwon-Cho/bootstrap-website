@@ -36,7 +36,7 @@ textarea::placeholder {
 @media screen and (min-width: 992px) {
   /* kaho↓ */
   .up-navbar {
-    background-color: none !important;
+    background-color: transparent !important;
   }
 
   .up-nav {
@@ -195,4 +195,9 @@ textarea::placeholder {
   .link-box {
     margin-right: 70px;
   }
+}
+
+@media screen and (max-width: 992px) {
+.navbar{
+  background-color:  #252b42;}
 }
