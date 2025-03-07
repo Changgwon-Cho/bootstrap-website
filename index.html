@@ -15,53 +15,161 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
     <link href="./style.css" rel="stylesheet" />
     <style>
       body {
         font-family: "Montserrat", sans-serif;
       }
     </style>
-
   </head>
   <body>
     <!-- kaho ↓ -->
-
-        <!-- Navbar-->  
-        <header>
-          <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
-          <div class="navigation container-fluid p-0">
-            <a class="navbar-brand text-white" href="#">Brand Name</a>
-            <div class="gap-1">
-                <img class="d-lg-none" src="K.assets/icn search .icn-xs.svg" alt="Menu" width="30" height="30">
-                <img class="d-lg-none" src="K.assets/icn shopping-cart .icn-xs.svg" alt="Menu" width="30" height="30">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <img src="K.assets/icn menu .icn-xs.svg" alt="Menu" width="30" height="30">
-                </button>
+    <!-- Navbar-->
+    <header>
+      <div
+        class="service-bg bg-image position-relative"
+        style="
+          background-image: url('K.assets/background.svg');
+          width: 100%;
+          height: 110vh;
+          background-position: center center;
+          background-repeat: no-repeat;
+          overflow: hidden;
+          background-size: cover;
+        "
+      >
+        <nav
+          class="navbar navbar-expand-lg py-0"
+          style="background-color: #252b42"
+        >
+          <div
+            class="logo-bar navigation container-fluid"
+            style="padding: 36px 38px 30px 35px"
+          >
+            <p
+              class="navbar-brand text-white fs-4 fw-bold lh-sm p-0 mb-0 me-5"
+              style="letter-spacing: 0.1px"
+            >
+              BrandName
+            </p>
+            <div class="d-flex gap-4 d-lg-none">
+              <img class="d-lg-none" src="./K.assets/search.svg" alt="search" />
+              <img
+                class="d-lg-none"
+                src="./K.assets/shopping-cart.svg"
+                alt="shopping-cart"
+              />
+              <button
+                class="toggleMenu"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <input type="checkbox" id="toggleMenuCheckbox" />
+              </button>
             </div>
-            <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            <div
+              class="collapse navbar-collapse text-white"
+              id="navbarNavDropdown"
+            >
+              <ul
+                class="nav-list navbar-nav me-auto mb-2 mb-lg-0 align-items-center pt-5 gap-4 z-3"
+              >
+                <li class="nav-item d-flex align-items-center">
+                  <p
+                    class="nav-link text-white p-0 m-0"
+                    aria-current="page"
+                    href="#"
+                  >
+                    Home
+                  </p>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Product</a>
+                <li class="nav-item d-flex align-items-center">
+                  <p class="nav-link text-white p-0 m-0" href="#">Product</p>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-white" aria-current="page" href="#">Pricing</a>
+                <li class="nav-item d-flex align-items-center">
+                  <p
+                    class="nav-link active text-white p-0 m-0"
+                    aria-current="page"
+                    href="#"
+                  >
+                    Pricing
+                  </p>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Contact</a>
+                <li class="nav-item d-flex align-items-center">
+                  <p class="nav-link text-white p-0 m-0" href="#">Contact</p>
                 </li>
               </ul>
-              <div class="d-flex gap-3">
-                  <a class="nav-link" href="#">Login</a>
-                  <button class="btn btn-primary" type="submit">Become a member →</button>
+              <div class="d-flex gap-5 align-items-center">
+                <p class="nav-link d-none d-lg-block m-0" href="#">Login</p>
+                <button class="btn btn-primary d-none d-lg-block" type="submit">
+                  Become a member →
+                </button>
               </div>
             </div>
           </div>
-          </nav>  
-        </header>
-            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </nav>
+        <!-- 1st Section-->
+        <div class="container-fluid p-0" style="width: 100%">
+          <div
+            class="text-overlay pl text-center text-lg-start"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: white;
+              font-size: 36px;
+              font-weight: bold;
+            "
+          >
+            <div class="container_responsive z-1">
+              <div
+                class="insurance-info d-flex flex-column align-content-center gap-2"
+                style="margin-top: 300px"
+              >
+                <h2 style="font-size: 40px; font-weight: 700">
+                  We Ensure A Best Insurance Service
+                </h2>
+                <p class="fs-6">
+                  We know how large objects will act, but things on a small
+                  scale just do not act that way.
+                </p>
+                <div
+                  class="button_top d-flex flex-column align-items-center gap-2"
+                >
+                  <button
+                    class="btn btn-primary rounded-pill p-2"
+                    type="button"
+                    style="width: 185px"
+                  >
+                    Get Quote Now
+                  </button>
+                  <button
+                    class="btn btn-outline-primary rounded-pill p-2"
+                    type="button"
+                    style="width: 154px"
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
                 <li? class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"><img src="K.assets/icn search .icn-xs.svg" alt="Icon" width="30"></a>
@@ -81,110 +189,132 @@
               </ul>
             </div> -->
 
-        <main>
-        <!-- 1st Section-->
-        <div class="container-fluid p-0" style="width: 100%;">
-          <div class="bg-image position-relative" style="background-image: url('K.assets/background.svg'); height:80vh; background-position: right center;
-          background-repeat: no-repeat; overflow: hidden; background-size: cover;">
-          <!-- <div class="bg-image" style="background-image: url('K.assets/background.svg'); background-size: auto; background-position: right; height: 100vh; overflow: hidden; position: relative;">-->
-          <div class="text-overlay pl text-center text-lg-start" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 36px; font-weight: bold;">
-            <div class="container_responsive">
-              <div class="d-flex flex-column align-content-center gap-2"> 
-                <h2  style="font-size: 40px; font-weight: 700; width: 314px;">We Ensure A Best Insurance Service</h2>
-                <p class="fs-6">We know how large objects will act, but things on a small scale just do not act that way.</p>
-                <div class="button_top d-flex flex-column align-items-center gap-2">
-                  <!-- <div class="d-grid gap-2"> -->
-                  <button class="btn btn-primary rounded-pill  p-2" type="button" style="width: 185px;">Get Quote Now</button>
-                  <button class="btn btn-outline-primary rounded-pill p-2 " type="button" style="width: 154px;">Learn More</button>
-                    <!-- <button class="col-lg-3 btn btn-primary rounded-pill p-3 col-lg-1" type="button">Get Quote Now</button>
-                    <button class="col-lg-3 btn btn-outline-primary rounded-pill p-3 col-lg-1" type="button">Learn More</button> -->
-                </div>
-              </div>
-            </div>  
+    <main>
+      <!-- 2nd Section-->
+      <div
+        class="features-1 d-flex flex-column text-white"
+        style="gap: 30px; background-color: #252b42"
+      >
+        <div
+          class="d-flex flex-column align-items-center"
+          style="padding: 40px 50px"
+        >
+          <img
+            src="./K.assets/icn resize .icn-xl.svg"
+            style="width: 72px"
+            alt="resize"
+          />
+          <h5 class="text-center" style="padding-top: 30px">Peace of Mind</h5>
+          <p class="text-center" style="max-width: 234px; font-size: 14px">
+            So it really behaves like neither. Now we have given up.
+          </p>
+        </div>
+        <div
+          class="d-flex flex-column align-items-center"
+          style="padding: 50px"
+          ;
+        >
+          <img
+            src="./K.assets/icn resize .icn-xl.svg"
+            style="width: 72px"
+            alt="resize"
+          />
+          <h5 class="text-center" style="padding-top: 30px">Set For Life</h5>
+          <p class="text-center" style="max-width: 234px; font-size: 14px">
+            They were used to create the machines that launched
+          </p>
+        </div>
+        <div
+          class="d-flex flex-column align-items-center"
+          style="padding: 50px"
+          ;
+        >
+          <img
+            src="./K.assets/icn resize .icn-xl.svg"
+            style="width: 72px"
+            alt="resize"
+          />
+          <h5 class="text-center" style="padding-top: 30px">
+            100% Satisfaction
+          </h5>
+          <p class="text-center" style="max-width: 234px; font-size: 14px">
+            So it really behaves like neither. Now we have given up.
+          </p>
+        </div>
+      </div>
+      <!-- 3rd Section-->
+      <div
+        class="d-flex flex-column align-items-center"
+        style="background-color: #8ec2f2; padding: 30px 42px"
+      >
+        <h1 class="fs-1 text-white text-center" style="padding-top: 45px">
+          What clients say
+        </h1>
+        <p
+          class="fs-6 text-center text-white"
+          style="width: 308px; margin-bottom: 60px"
+        >
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+        <div
+          class="card_container d-flex flex-column justify-content-center align-items-center"
+          style="gap: 60px"
+        >
+          <div
+            class="card"
+            style="max-width: 414px; height: 408px; padding: 40px"
+          >
+            <div class="clients-area card-body">
+              <h5 class="card-title">Regina Miles</h5>
+              <p class="card-text mb-0" style="color: #737373">Designer</p>
+              <img src="K.assets/stars.svg" alt="Icon" class="mt-3 mb-3" />
+              <p class="card-text" style="color: #737373">
+                This proved to be impossible using the traditional concepts of
+                space and time. Einstein developed a new view of time first and
+                then space. This proved to be impossible using the traditional
+                concepts of space and time. Einstein developed a new view of
+                time first and then space.
+              </p>
+            </div>
+            <img
+              src="K.assets/user.1.svg"
+              class="d-none d-lg-block picture-box d-flex justify-content-center align-items-center rounded-circle border-0"
+              style="padding: 29px 17px 29px 16px; width: 120px; height: 120px"
+            />
           </div>
+          <div
+            class="card"
+            style="max-width: 414px; height: 408px; padding: 40px"
+          >
+            <div class="clients-area card-body">
+              <h5 class="card-title">Regina Miles</h5>
+              <p class="card-text" style="color: #737373">Designer</p>
+              <img src="K.assets/stars.svg" alt="Icon" width="" />
+              <p class="card-text p-3" style="color: #737373">
+                This proved to be impossible using the traditional concepts of
+                space and time. Einstein developed a new view of time first and
+                then space. This proved to be impossible using the traditional
+                concepts of space and time. Einstein developed a new view of
+                time first and then space.
+              </p>
+            </div>
+            <img
+              src="K.assets/user.2.svg"
+              class="d-none d-lg-block picture-box d-flex justify-content-center align-items-center rounded-circle border-0"
+              style="padding: 29px 17px 29px 16px; width: 120px; height: 120px"
+            />
           </div>
         </div>
-        <!-- 2nd Section-->
-        <div class="features-1 d-flex flex-column text-white" style="gap: 30px; background-color: #252B42;">
-          <div class="d-flex flex-column align-items-center" style="padding:40px 50px;">
-            <img src="./K.assets/icn resize .icn-xl.svg" style="width: 72px;" alt="resize">
-            <h5 class="text-center" style="padding-top: 30px;">Peace of Mind</h5>
-            <p class="text-center" style="max-width: 234px;" >So it really behaves like neither. 
-              Now we have given up. </p>
-          </div>
-          <div class="d-flex flex-column align-items-center" style="padding:50px";>
-            <img src="./K.assets/icn resize .icn-xl.svg" style="width: 72px;"  alt="resize">
-            <h5 class="text-center" style="padding-top: 30px;">Set For Life
-            </h5>
-            <p class="text-center" style="max-width: 234px;">They were used to create the 
-              machines that launched </p>
-          </div>
-          <div class="d-flex flex-column align-items-center" style="padding:50px";>
-            <img src="./K.assets/icn resize .icn-xl.svg" style="width: 72px;"  alt="resize">
-            <h5 class="text-center" style="padding-top: 30px;">100% Satisfaction
-            </h5>
-            <p class="text-center" style="max-width: 234px;">So it really behaves like neither. 
-              Now we have given up. </p>
-          </div>
-        </div>
-        <!-- 3rd Section-->
-        <div class="d-flex flex-column align-items-center" style="background-color: #8EC2F2; padding: 30px 42px;">
-          <h1 class="fs-1 text-white text-center" style="padding-top: 45px;" >What clients say</h1>
-          <p class="fs-6 text-center text-white" style="width: 308px; margin-bottom: 60px;">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
-              <div class="card_container d-flex  flex-column justify-content-center align-items-center" style="gap: 60px;">
-                <div class="card" style="max-width: 414px; height: 408px;  padding: 40px;">
-                  <div class="card-body">
-                    <h5 class="card-title">Regina Miles</h5>
-                    <p class="card-text" style="color: #737373;">Designer</p>
-                    <img src="K.assets/stars.svg" alt="Icon" width="">
-                    <p class="card-text p-3" style="color: #737373;">This proved to be 
-                                              impossible using the 
-                                              traditional concepts 
-                                              of space and time. Einstein 
-                                              developed a new view 
-                                              of time first and then 
-                                              space. This proved to be 
-                                              impossible using the 
-                                              traditional concepts 
-                                              of space and time. Einstein 
-                                              developed a new view 
-                                              of time first and then space.</p>
-                  </div>
-                  <img src="K.assets/user.1.svg" class="d-sm-none d-lg-block picture-box d-flex justify-content-center align-items-center rounded-circle border-0" style="padding: 29px 17px 29px 16px;
-                  width: 120px; height: 120px;"></img>
-                </div>
-                <div class="card" style="max-width: 414px; height: 408px; padding: 40px;">
-                  <div class="card-body">
-                    <h5 class="card-title">Regina Miles</h5>
-                    <p class="card-text" style="color: #737373;">Designer</p>
-                    <img src="K.assets/stars.svg" alt="Icon" width="">
-                    <p class="card-text  p-3" style="color: #737373;">This proved to be 
-                    impossible using the 
-                    traditional concepts 
-                    of space and time. Einstein 
-                    developed a new view 
-                    of time first and then 
-                    space. This proved to be 
-                    impossible using the 
-                    traditional concepts 
-                    of space and time. Einstein 
-                    developed a new view 
-                    of time first and then space.</p>
-                  </div>
-                  <img src="K.assets/user.2.svg" class="d-sm-none d-lg-block picture-box d-flex justify-content-center align-items-center rounded-circle border-0" style="padding: 29px 17px 29px 16px;
-                  width: 120px; height: 120px;"></img>
-                </div>
-              </div>
-        </div>
-
-
+      </div>
     </main>
-
-
 
     <!-- Jay ↓-->
     <!-- first section -->
-    <section class="together" style="background-color: #252b42">
+    <section
+      class="together"
+      style="background-color: #252b42; padding: 30px 42px 52px 42px"
+    >
       <div class="together-content" style="padding: 45px 0">
         <div class="together-main-content">
           <h2
@@ -241,6 +371,13 @@
               <img
                 src="./assets/imgs/post-1.svg"
                 class="card-img-top img-fluid border-0 rounded-0"
+                style="
+                  background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 14.58%,
+                    #383838d6 100%
+                  );
+                "
                 alt="post-1"
               />
               <div
@@ -281,6 +418,13 @@
               <img
                 src="./assets/imgs/post-2.svg"
                 class="card-img-top img-fluid border-0 rounded-0"
+                style="
+                  background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 14.58%,
+                    #383838d6 100%
+                  );
+                "
                 alt="post-2"
               />
               <div
@@ -321,6 +465,13 @@
               <img
                 src="./assets/imgs/post-3.svg"
                 class="card-img-top img-fluid border-0 rounded-0"
+                style="
+                  background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 14.58%,
+                    #383838d6 100%
+                  );
+                "
                 alt="post-3"
               />
               <div
@@ -361,6 +512,13 @@
               <img
                 src="./assets/imgs/post-4.svg"
                 class="card-img-top img-fluid border-0 rounded-0"
+                style="
+                  background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 14.58%,
+                    #383838d6 100%
+                  );
+                "
                 alt="post-4"
               />
               <div
@@ -401,7 +559,10 @@
     </section>
 
     <!-- second section -->
-    <section class="pricing" style="background-color: #252b42">
+    <section
+      class="pricing"
+      style="background-color: #252b42; padding: 30px 42px 109px 42px"
+    >
       <div class="pricing-content" style="padding: 45px 0">
         <div class="pricing-main-content">
           <h2
@@ -611,6 +772,10 @@
                   padding: 29px 17px 29px 16px;
                   width: 90px;
                   height: 90px;
+                  position: absolute;
+                  z-index: 10;
+                  left: 68%;
+                  top: -3%;
                 "
               >
                 <h3
@@ -918,8 +1083,30 @@
     </section>
 
     <!-- third section -->
-    <section class="contact">
-      <div class="contact-content d-flex flex-column">
+    <section
+      class="contact"
+      style="
+        padding: 30px 42px;
+        position: relative;
+        width: 100%;
+        height: 110vh;
+        background-image: url(./assets/imgs/appointment-bg.svg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+      "
+    >
+      <div
+        class="contact-content d-flex flex-column"
+        style="
+          padding: 45px 19px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        "
+      >
         <div class="contact-main-content" style="margin: 40px 0">
           <h5
             class="fs-6 fw-bold lh-base mb-0"
@@ -986,6 +1173,13 @@
                 src="./assets/imgs/vector.svg"
                 alt="vector"
                 class="input-icon"
+                style="
+                  position: absolute;
+                  top: 50%;
+                  left: 90%;
+                  transform: translateY(-50%);
+                  pointer-events: none;
+                "
               />
             </div>
             <div class="position-relative">
@@ -1006,6 +1200,13 @@
                 src="./assets/imgs/vector.svg"
                 alt="vector"
                 class="input-icon"
+                style="
+                  position: absolute;
+                  top: 50%;
+                  left: 90%;
+                  transform: translateY(-50%);
+                  pointer-events: none;
+                "
               />
             </div>
           </div>
@@ -1021,6 +1222,7 @@
                 border: 1px solid #bdbdbd;
                 letter-spacing: 0.2px;
                 font-size: 14px;
+                resize: none;
               "
             ></textarea>
           </div>
@@ -1044,7 +1246,10 @@
 
     <!-- footer -->
     <footer>
-      <div class="contact-ft d-flex flex-column gap-5">
+      <div
+        class="contact-ft d-flex flex-column gap-5"
+        style="padding: 40px 88px 46px 88px"
+      >
         <div>
           <h3
             class="fs-4 fw-bold lh-sm mb-10"
@@ -1076,7 +1281,10 @@
           </button>
         </div>
       </div>
-      <div class="info-ft" style="background-color: #252b42">
+      <div
+        class="info-ft"
+        style="background-color: #252b42; padding: 55px 88px"
+      >
         <div class="info-ft-area d-flex flex-column" style="gap: 30px">
           <div class="contact-info d-flex flex-column" style="gap: 20px">
             <h5
@@ -1282,7 +1490,7 @@
       </div>
       <div
         class="copy-link-ft d-block d-lg-none"
-        style="background-color: #252b42"
+        style="background-color: #252b42; padding: 25px 88px 55px 88px"
       >
         <div class="d-flex flex-column" style="gap: 50px">
           <div>
