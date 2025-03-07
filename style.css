@@ -1,4 +1,11 @@
-/* kaho↓ */
+/* kaho↓ 576*/
+
+.navigation{
+  background-color: #252B42;}
+
+.features-1 {
+  padding: 96px 195px;
+}
 
 /* Jay↓ */
 /* first section */
@@ -79,6 +86,32 @@ textarea {
 
 @media screen and (min-width: 992px) {
   /* kaho↓ */
+
+
+  .navbar{
+    background-color: none !important;}
+
+  .features-1 {
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+
+  .button_top{
+    flex-direction: row !important;
+  }
+
+.card_container{
+  flex-direction: row !important;
+  }
+
+
+.picture-box {
+  position: absolute;
+  z-index: 10;
+  left: -15%;
+  top: 7%;
+}
+}
 
   /* Jay↓ */
   /* first section */
